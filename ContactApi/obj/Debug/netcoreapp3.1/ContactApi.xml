@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ContactApi</name>
+    </assembly>
+    <members>
+        <member name="M:ContactApi.Controllers.ContactAndSkillController.GetContactAnsSkillTable">
+            <summary>
+            Return the list of all contact and skill links.
+            </summary>
+        </member>
+        <member name="M:ContactApi.Controllers.ContactAndSkillController.GetContactAndSkill(System.Int64)">
+            <summary>
+            Return the contact and skill link corresponding to id.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:ContactApi.Controllers.ContactAndSkillController.GetContactAndSkillFromContact(System.Int64)">
+            <summary>
+            Return the contact and skill link where the contact id corresponds to id.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:ContactApi.Controllers.ContactAndSkillController.GetContactAndSkillFromSkill(System.Int64)">
+            <summary>
+            Return the contact and skill link where the skill id corresponds to id.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:ContactApi.Controllers.ContactAndSkillController.PutContactAndSkill(System.Int64,ContactAndSkill)">
+            <summary>
+            Update the contact and skill link corresponding to id.
+            </summary>
+            <param name="id"></param>
+            <param name="contactAndSkill"></param>
+        </member>
+        <member name="M:ContactApi.Controllers.ContactAndSkillController.PostContactAndSkill(ContactAndSkill)">
+            <summary>
+            Create a new contact and skill link.
+            </summary>
+            <param name="contactAndSkill"></param>
+        </member>
+        <member name="M:ContactApi.Controllers.ContactAndSkillController.DeleteContactAndSkillDeleteContact(System.Int64)">
+            <summary>
+            Delete all the contact and skill links where the id appears as a contact.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:ContactApi.Controllers.ContactAndSkillController.DeleteContactAndSkillDeleteSkill(System.Int64)">
+            <summary>
+            Delete all the contact and skill links where the id appears as a skill.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:ContactApi.Controllers.ContactAndSkillController.DeleteContactAndSkill(System.Int64)">
+            <summary>
+            Delete the  contact and skill link corresponding to id.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:ContactApi.Controllers.ContactController.GetContact">
+            <summary>
+            Return the list of all contacts.
+            </summary>
+        </member>
+        <member name="M:ContactApi.Controllers.ContactController.GetContact(System.Int64)">
+            <summary>
+            Return the contact corresponding to id.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:ContactApi.Controllers.ContactController.PutContact(System.Int64,Contact)">
+             <summary>
+             Modify the contact corresponding to id.
+             </summary>
+             <param name="id"></param>
+            <param name="contact"></param>
+        </member>
+        <member name="M:ContactApi.Controllers.ContactController.PostContact(Contact)">
+            <summary>
+            Create a new contact.
+            </summary>
+        </member>
+        <member name="M:ContactApi.Controllers.ContactController.DeleteContact(System.Int64)">
+             <summary>
+             Delete the contact corresponding to id.
+             </summary>
+             <remark>
+             You must also request DELETE: api/ContactAndSkill/deleteContact/{id} 
+             to ensure that there are no unexisting ids in this table
+            </remark>
+             <param name="id"></param>
+        </member>
+        <member name="M:ContactApi.Controllers.SkillController.GetSkills">
+            <summary>
+            Return the list of all skills.
+            </summary>
+        </member>
+        <member name="M:ContactApi.Controllers.SkillController.GetSkill(System.Int64)">
+            <summary>
+            Return the skill corresponding to id.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:ContactApi.Controllers.SkillController.PutSkill(System.Int64,Skill)">
+            <summary>
+            Modify the skill corresponding to id.
+            </summary>
+            <param name="id"></param>
+            <param name="skill"></param>
+        </member>
+        <member name="M:ContactApi.Controllers.SkillController.PostSkill(Skill)">
+            <summary>
+            Create a new skill.
+            </summary>
+        </member>
+        <member name="M:ContactApi.Controllers.SkillController.DeleteSkill(System.Int64)">
+             <summary>
+             Delete the skill corresponding to id.
+             </summary>
+             <remark>
+             You must also request DELETE: api/ContactAndSkill/deleteSkill/{id} 
+             to ensure that there are no unexisting ids in this table
+            </remark>
+             <param name="id"></param>
+        </member>
+    </members>
+</doc>

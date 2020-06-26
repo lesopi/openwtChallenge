@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact CRUD</title>
+        <link rel="stylesheet" href="css/site.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <a href="skill.html" >Skills</a>
+        <h1>Contact CRUD</h1>
+        <h3>Add a new contact</h3>
+        <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+            <input type="text" id="add-firstName" placeholder="First name">
+            <input type="text" id="add-lastName" placeholder="Last name">
+            <input type="text" id="add-fullName" placeholder="Full name">
+            <input type="text" id="add-address" placeholder="Address">
+            <input type="text" id="add-email" placeholder="Email">
+            <input type="text" id="add-phoneNumber" placeholder="Phone number">
+            <input type="submit" value="Add">
+        </form>
+
+        <div id="editForm" style="display: none;">
+            <h3>Edit</h3>
+            <form action="javascript:void(0);" onsubmit="updateItem()">
+                <input type="hidden" id="edit-id">
+                <input type="text" id="edit-name">
+                <input type="text" id="edit-lastName">
+                <input type="text" id="edit-fullName">
+                <input type="text" id="edit-address">
+                <input type="text" id="edit-email">
+                <input type="text" id="edit-phoneNumber">
+                <input type="submit" value="Save">
+                <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+            </form>
+        </div>
+        <br>
+        <p id="counter"></p>
+
+        <table class="customTable">
+            <tr>
+                <th>Contacts</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tbody id="contacts"></tbody>
+        </table>
+        <script src="js/siteContact.js" asp-append-version="true"></script>
+        <script type="text/javascript">
+            getItems();
+        </script>
+    </body>
+</html>

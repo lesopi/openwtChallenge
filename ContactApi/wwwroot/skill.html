@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact CRUD</title>
+        <link rel="stylesheet" href="css/site.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <a href="index.html">Contacts</a>
+        <h1>Skill CRUD</h1>
+        <h3>Add a new skill</h3>
+        <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+            <input type="text" id="add-name" placeholder="Skill name">
+            <input type="text" id="add-level" placeholder="Skill level">
+            <input type="submit" value="Add">
+        </form>
+
+        <div id="editForm" style="display: none;">
+            <h3>Edit</h3>
+            <form action="javascript:void(0);" onsubmit="updateItem()">
+                <input type="hidden" id="edit-id">
+                <input type="text" id="edit-name">
+                <input type="text" id="edit-level">
+                <input type="submit" value="Save">
+                <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+            </form>
+        </div>
+        <br>
+        <p id="counter"></p>
+
+        <table style="width: 75%">
+            <tr>
+                <th>Skills</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tbody id="skills"></tbody>
+        </table>
+        <script src="js/siteSkills.js" asp-append-version="true"></script>
+        <script type="text/javascript">
+            getItems();
+        </script>
+    </body>
+</html>
