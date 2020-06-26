@@ -159,7 +159,7 @@ namespace ContactApi.Controllers
         }
 
         /// <summary>
-        /// Delete all the contact and skill links where the id appears as a skill.
+        /// Delete all the contact and skill links where the id is appearing as a skill.
         /// </summary>
         /// <param name="id"></param>
         [HttpDelete("deleteSkill/{id}")]
